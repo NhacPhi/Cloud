@@ -32,3 +32,12 @@ public enum AnimalType
     Horse,
     Dog
 }
+
+public enum AnimalState
+{
+    Idle,
+    Walk,
+    Run,
+    Eat,
+    Die
+}

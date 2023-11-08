@@ -72,23 +72,6 @@ public class Plant : LivingEntity,IPointerClickHandler
         verdancy = 10;
     }
 
-
-    IEnumerator TimeToGrownUp()
-    {
-        while(true)
-        {
-            yield return new WaitForSeconds(0.05f);
-            if(transform.localScale == Vector3.one) 
-            {
-                break;
-            }
-
-            transform.localScale += new Vector3(0.05f, 0.05f, 0.05f);
-
-        }
-
-    }
-
     IEnumerator TimeToDie()
     {
         while (true)
